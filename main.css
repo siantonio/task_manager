@@ -56,8 +56,8 @@ body
 { 
 	display: block;
 	margin: 20px auto ;
-	min-width: 600px;
-	max-width: 1000px;
+	min-width: 900px;
+	max-width: 1300px;
 	overflow: auto;
 	height: 380px;
 	color: white;
@@ -169,6 +169,11 @@ input:hover
 	cursor: pointer;
 }
 
+tr:hover
+{
+	background: rgba(255,255,255,.5);
+}
+
 .form-output:hover,.form-delete:hover,
 .form-edit:hover,.form-add:hover
 {
@@ -182,3 +187,4 @@ body
 	background-size: cover;
 
 }
+
