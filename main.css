@@ -46,15 +46,51 @@ table {
 	border-spacing: 0;
 }
 /* ===================================*/
+body
+{
+	margin: 20px;
+	margin-top: 5px;
+}
+
+.form-output
+{ 
+	display: block;
+	margin: 20px auto ;
+	min-width: 600px;
+	max-width: 1000px;
+	overflow: auto;
+	height: 380px;
+	color: white;
+	background: rgba(255,255,255,.1);
+	cursor: pointer;
+}
+
+#wrapper
+{
+	max-width: 1200px;
+	min-width: 1200px;
+	height: 300px;
+	position: relative;
+	margin: 10px auto;
+}
+
+.number
+{
+	display: inline-block;
+	text-shadow: black 0 0 8px;
+	text-align: center;
+}
+
 
 .form-add
 {
 	position: absolute;
 	display: inline-block;
-	/*left: 10px;*/
-	margin: 20px 10px;
-	width: 250px;
-	height: 400px;
+	top: 0px;
+	/*left: 200px;*/ 
+	/*margin: 20px 10px;*/
+	width: 300px;
+	height: 280px;
 	background: rgba(255,255,255,.1);
 	color: white;
 	border-radius: 20px;
@@ -65,28 +101,16 @@ table {
 {
 	position: absolute;
 	display: inline-block;
-	left: 250px;
+	top: 0px;
+	left: 400px;
 	background: rgba(255,255,255,.1);
 	color: white;
 	font-size: 20px 30px;
-	margin: 20px;
-	width: 250px;
-	height: 400px;
+	margin: 0px 0px;
+	width: 400px;
+	height: 280px;
 	background: rgba(255,255,255,.1);
 	border-radius: 20px;
-	cursor: pointer;
-}
-
-.form-output
-{
-	position: absolute;
-	display: inline-block;
-	margin: 20px 10px;
-	left: 520px;
-	width: 530px;
-	height: 400px;
-	color: white;
-	background: rgba(255,255,255,.1);
 	cursor: pointer;
 }
 
@@ -94,12 +118,13 @@ table {
 {
 	position: absolute;
 	display: inline-block;
-	right: 10px;
+	top: 0px;
+	right: 0px;
 	background: rgba(255,255,255,.1);
 	color: white;
-	margin: 20px 10px;
-	width: 250px;
-	height: 400px;
+	margin: 0px 10px;
+	width: 300px;
+	height: 280px;
 	border-radius: 20px;
 	cursor: pointer;
 }
@@ -107,25 +132,30 @@ table {
 table
 {
 	width: 100%; 
-    border: 4px double black; 
+    border: 6px double black;
     border-collapse: collapse; 
     color: white;
 }
 
- tr { 
+tr { 
     text-align: right;  
     padding: 5px; 
-    border: 1px solid black; 
+    border: 3px solid black; 
    }
 
 td { 
     padding: 5px; 
-    border: 1px solid black; 
+    border: 3px solid black; 
    }
+
+
 
 .pitted
 {
 	text-shadow: black 0 0 8px;
+	text-align: center;
+	color: white;
+	/*display: inline-block;*/
 }
 
 input:focus, select:focus
@@ -133,36 +163,22 @@ input:focus, select:focus
 	box-shadow: 0 0 10px rgba(255,255,255,0.8); 
 	
 }
+
 input:hover
 {
 	cursor: pointer;
 }
-.form-output:hover
+
+.form-output:hover,.form-delete:hover,
+.form-edit:hover,.form-add:hover
 {
 	background: rgba(255,255,255,.2);
 	box-shadow: 0 0 10px rgba(255,255,255,0.8);
 }
 
-.form-delete:hover
-{
-	background: rgba(255,255,255,.2);
-	box-shadow: 0 0 10px rgba(255,255,255,0.8); 
-}
-
-.form-edit:hover
-{
-	background: rgba(255,255,255,.2);
-	box-shadow: 0 0 10px rgba(255,255,255,0.8); 
-}
-
-.form-add:hover
-{
-	background: rgba(255,255,255,.2);
-	box-shadow: 0 0 10px rgba(255,255,255,0.8); 
-}
-
 body
 {
-	background: url(3.jpg) no-repeat;
-}
+	background: url(3.jpg);
+	background-size: cover;
 
+}
