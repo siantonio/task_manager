@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<meta charset="utf-8">
+				<link rel=stylesheet href="css/main.css">
+				<title>Forma</title>
+		</head>	
+		<body>
+				<form class="login" action="enter.php" method="post">
+						<label for="inv_number">Инвентарный номер</label>
+						<input type="text" id="inv_number" name="inv_number" pattern="^[0-9]+$" />
+
+						<label for="motherboard">Материнская плата</label>
+						<input type="text" id="motherboard" name="motherboard" class="not_inv" required />
+
+						<label for="ram">ОЗУ</label>
+						<input type="text" id="ram" name="ram" class="not_inv" pattern="^[0-9]+$" required />
+
+						<label for="video">Видеокарта</label>
+						<input type="text" id="video" name="video" class="not_inv" required />
+
+						<label for="cpu">Процессор</label>
+						<input type="text" id="cpu" name="cpu" class="not_inv" required />
+
+						<label for="hdd">Жесткий диск</label>
+						<input type="button" id="button" value="Добавить поле"/>
+						<input type="text" id="hdd1" name="hdd" class="not_inv" required />
+
+						<input type="submit" id="sub" value="Отправить"/>
+						<input type="reset" value="Очистить"/>
+				</form>
+				<script src="jquery/jquery-3.2.1.min.js"></script>
+				<script src="script/script.js"></script>
+		</body>
+</html>
